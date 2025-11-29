@@ -284,3 +284,26 @@ a = [1,2]
 b = [3,2]
 c = [[i*j for i in a ] for j in b]
 print(c[1][1])
+
+# Question 23
+def fs(lst,fil):
+    f = lambda x:not any(p in x for p in fil)
+    return list(filter(f,lst))
+f = ["$","%"]
+lst = ["$dollar","@at","%modulu"]
+print(fs(lst,f))
+
+# Question 24
+nums = "1","2","3"
+# print(type(nums))
+
+a = "Hi"
+try:
+    a = int(a)
+    print(a)
+except ValueError:
+    print(a * 3)
+except TypeError:
+    print("Bye")
+except NameError:
+    print("opps")

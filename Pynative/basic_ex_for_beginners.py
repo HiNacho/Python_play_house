@@ -131,3 +131,33 @@ for i in range(1,11):
     for j in range(1,11):
         print(i*j, end = " ")
     print(" ")
+
+# Question 10
+# Merge two lists using the following condition
+"""
+Given two lists of numbers, write Python code to create a new list containing odd numbers 
+from the first list and even numbers from the second list.
+"""
+list1 = [10, 20, 25, 30, 35]
+list2 = [40, 45, 60, 75, 90]
+
+new_list = []
+
+list_1 = list(filter(lambda x: x % 2 == 0, list1))
+list_2 = list(filter(lambda x: x%2 != 0, list2))
+print(list_2)
+print(list_1)
+
+new_list = list_1 + list_2
+# print(new_list)
+
+a = [1, 2, 3]
+b = a
+b.append(4)
+print(a)
+
+"""
+Explanation:
+
+When you assign b = a for mutable objects like lists, b does not become a copy of a; instead, both a and b refer to the same list in memory. Therefore, modifying b also modifies a.
+"""
