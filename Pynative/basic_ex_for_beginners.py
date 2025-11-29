@@ -109,4 +109,25 @@ Write a Python code to find how often the substring “Emma” appears in the gi
 str_x = "Emma is a good developer. Emma is a writer"
 
 count_str = str_x.count("Emma")
-print(count_str)
+# print(f"there are {count_str} occurrences of Emma in the given string")
+
+# question 8
+# Print the following pattern
+
+for i in range(1,5):
+    for j in range(i):
+        print(i, end = " ")
+    print("")
+
+
+for i in range(1,5):
+    for j in range(i,5):
+        print(i, end = " ")
+    print("")
+
+# Question 9
+# Print multiplication table from 1 to 10
+for i in range(1,11):
+    for j in range(1,11):
+        print(i*j, end = " ")
+    print(" ")
