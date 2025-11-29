@@ -85,4 +85,28 @@ if list_1[0] == list_1[-1]:
     print(True)
 else:
     print(False)
+# Process finished with exit code 0
 
+
+# Day 2
+# Question 6
+"""
+Display numbers divisible by 5
+Write a Python code to display numbers from a list divisible by 5
+"""
+
+list1 = [10,15,3,7,8,5]
+
+new_list = list(filter(lambda x: x % 5 == 0, list1))
+# print(new_list)
+
+# question 7
+"""
+Find the number of occurrences of a substring in a string
+Write a Python code to find how often the substring “Emma” appears in the given string
+"""
+
+str_x = "Emma is a good developer. Emma is a writer"
+
+count_str = str_x.count("Emma")
+print(count_str)
